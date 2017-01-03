@@ -4,8 +4,10 @@ project(Soil)
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_SOURCE_DIR}/bin")
 
 include_directories(include)
-set(HEADER_FILES include/common.h)
+file(GLOB HEADER_FILES include/*.h)
 
 include_directories(src)
-add_library(soil SHARED src/main.cpp ${HEADER_FILES})
+file(GLOB LIB_FILES src/*.cpp)
+
+add_library(soil SHARED ${LIB_FILES} ${HEADER_FILES})
 set_target_properties(soil PROPERTIES PREFIX "")
