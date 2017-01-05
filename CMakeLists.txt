@@ -11,3 +11,5 @@ file(GLOB LIB_FILES src/*.cpp)
 
 add_library(soil SHARED ${LIB_FILES} ${HEADER_FILES})
 set_target_properties(soil PROPERTIES PREFIX "")
+
+add_executable(soilx ${LIB_FILES} ${HEADER_FILES})

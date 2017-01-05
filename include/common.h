@@ -16,3 +16,5 @@
 #else
     #define RV_ENTRY RVExtension
 #endif
+
+typedef float* position;
