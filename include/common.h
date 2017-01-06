@@ -16,3 +16,10 @@
 #else
     #define RV_ENTRY RVExtension
 #endif
+
+// Other OS/Compiler specific definitions
+#if defined(__GNUC__)
+    #define strncpy_s(destination, source, num) \
+        strncpy(destination, source, num);      \
+        destination[num - 1] = 0
+#endif
