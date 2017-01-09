@@ -1,5 +1,5 @@
 // Compile with:
-// gcc test.cpp -lstdc++ -Wl,--no-as-needed -ldl -o ../test
+// gcc runner.cpp -lstdc++ -Wl,--no-as-needed -ldl -o ../runner
 
 #include <iostream>
 #include <dlfcn.h>
