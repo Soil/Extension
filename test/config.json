@@ -1,0 +1,7 @@
+[
+    {
+        "name":   "returns valid version",
+        "input":  "version",
+        "output": "\\d+.\\d+.\\d+"
+    }
+]
