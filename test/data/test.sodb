@@ -1,0 +1,23 @@
+{
+    "parents": [
+        "test"
+    ],
+    "/soil/testobject.p3d": {
+        "classification": "house",
+        "positions": [
+            {
+                "pos": [0, 0, 0],
+                "tags": ["cover"],
+                "hiddenStances": ["down", "middle"]
+            }, {
+                "pos": [1, 1, 1],
+                "tags": ["open"],
+                "hiddenStances": []
+            }, {
+                "pos": [2, 2, 2],
+                "tags": ["cover"],
+                "hiddenStances": ["down", "middle", "up"]
+            }
+        ]
+    }
+}
