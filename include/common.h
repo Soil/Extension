@@ -23,3 +23,5 @@
         strncpy(destination, source, num);      \
         destination[num - 1] = 0
 #endif
+
+typedef float* position;
